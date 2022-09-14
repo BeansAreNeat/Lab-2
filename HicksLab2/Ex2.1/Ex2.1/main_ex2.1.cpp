@@ -16,18 +16,21 @@ int main()
 
 	cin >> length >> width;
 	{
+		// Calculated amount of paint in kg
 		using namespace kilogram;
 		A = amount(length, width);
 		cout << "Amount of paint needed: " << A << " kg" << endl;
 	}
 	cout << endl;
 	{
+		// Calculated amount of paint in mg
 		using namespace milligram;
 		A = amount(length, width);
 		cout << "Amount of paint needed: " << A << " mg" << endl;
 	}
 	cout << endl;
 	{
+		// Calculated amount of paint in tons
 		using namespace ton;
 		A = amount(length, width);
 		cout << "Amount of paint needed: " << A << " T" << endl;
